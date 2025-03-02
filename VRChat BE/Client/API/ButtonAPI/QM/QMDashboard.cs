@@ -37,7 +37,7 @@ namespace DeepClient.Client.API.ButtonAPI.QM
             }
             GameObject.Find("Canvas_QuickMenu(Clone)/CanvasGroup/Container/Window/QMParent/Menu_Dashboard/ScrollRect/Viewport/VerticalLayoutGroup/"+CatName+"BtnPref/"+ObjectName+"Button").GetComponent<MonoBehaviourPublicLi1ObUnique>().enabled = false;
             GameObject.Find("Canvas_QuickMenu(Clone)/CanvasGroup/Container/Window/QMParent/Menu_Dashboard/ScrollRect/Viewport/VerticalLayoutGroup/"+ CatName+ "BtnPref/"+ObjectName+"Button/TextLayoutParent/Text_H4").GetComponent<TextMeshProUGUI>().SetText(Text);
-            GameObject.Find("Canvas_QuickMenu(Clone)/CanvasGroup/Container/Window/QMParent/Menu_Dashboard/ScrollRect/Viewport/VerticalLayoutGroup/"+CatName+ "BtnPref/" +ObjectName+"Button").GetComponent<VRCQMDashButtonFunc>().onClick.AddListener((UnityEngine.Events.UnityAction)action);
+            GameObject.Find("Canvas_QuickMenu(Clone)/CanvasGroup/Container/Window/QMParent/Menu_Dashboard/ScrollRect/Viewport/VerticalLayoutGroup/"+CatName+ "BtnPref/" +ObjectName+"Button").GetComponent<VRCButtonHandle>().onClick.AddListener((UnityEngine.Events.UnityAction)action);
         }
     }
 }

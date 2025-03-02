@@ -1,9 +1,11 @@
 ﻿global using VRCPlayer = MonoBehaviour1PublicOb_pOb_s_pBoGaOb_pStUnique;
 global using GamelikeInputController = MonoBehaviour2PublicSiTrUnique;
-global using VRCQMDashButtonFunc = ButtonPublicIMoveHandlerIEventSystemHandlerIPointerDownHandlerIPointerUpHandlerIPointerEnterHandlerIPointerExitHandlerISelectHandlerIDeselectHandlerSt_cBo_sObObStUnique;
+global using VRCButtonHandle = ButtonPublicIMoveHandlerIEventSystemHandlerIPointerDownHandlerIPointerUpHandlerIPointerEnterHandlerIPointerExitHandlerISelectHandlerIDeselectHandlerSt_cBo_sObObStUnique;
 global using NetworkManager = MonoBehaviourPublicDaBoAc1ObDiOb2InHaUnique;
-global using USpeak = MonoBehaviourPublicBoSiBoLiSi1ObSiBoInUnique;
+global using USpeaker = MonoBehaviourPublicBoSiBoLiSi1ObSiBoInUnique;
 global using QuickMenu = UIElement1PublicCaGaCaObGa_cObMoGa_VUnique;
+global using HighlightsFXStandalone = MonoBehaviour2PublicSealedReInCoInhireInblreSiUnique;
+global using PortalInternal = MonoBehaviourPublicStSiBoInSeSoSiInStObUnique;
 ///
 /// The rest of globalusing is from HomoTool:https://github.com/tado1203/HomoTool/blob/master/HomoTool/GlobalUsings.cs
 ///

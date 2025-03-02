@@ -5,6 +5,8 @@ namespace DeepClient.Client.Module.Visuals
 {
     internal class ESP
     {
+        public static bool isCapEnabled = false;
+        public static bool isObjEnabled = false;
         #region PickupsESP
         public static void ObjectState(bool s)
         {
@@ -23,6 +25,7 @@ namespace DeepClient.Client.Module.Visuals
         #region CapsuleESP
         public static void CapsuleState(bool s)
         {
+            isCapEnabled = s;
             foreach (var player in VRCPlayerApi.AllPlayers)
             {
                 if (player.isLocal)

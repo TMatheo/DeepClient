@@ -1,7 +1,6 @@
 ﻿using BepInEx;
 using BepInEx.Logging;
 using BepInEx.Unity.IL2CPP;
-using DeepClient.Client;
 using UnityEngine;
 
 namespace DeepClient
@@ -13,7 +12,7 @@ namespace DeepClient
         public override void Load()
         {
             Log = base.Log;
-            //Client.Patching.InitPatch.Start();
+            Client.Patching.InitPatch.Start();
             AddComponent<MainMonoBehaviour>();
             AddComponent<Client.ClientMenu.VRMenu>();
         }
@@ -23,6 +22,16 @@ namespace DeepClient
         void OnEnable()
         {
             DearImGuiInjection.DearImGuiInjection.Render += Client.GUI.Rendering.RenderGui;
+        }
+        void Update()
+        {
+            Client.Module.Visuals.FlipScreen.OnUpdate();
+            Client.Module.Visuals.OptifineZoom.Update();
+            Client.Module.Movement.Flight.FlyUpdate();
+            Client.Module.Movement.Jetpack.Update();
+            Client.Module.Movement.RayCastTP.Update();
+            Client.Module.Movement.SpinBot.Update();
+            Client.Module.Exploits.ItemLagger.OnUpdate();
         }
     }
 }

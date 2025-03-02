@@ -1,5 +1,5 @@
-﻿    using System.Collections;
-using DeepClient.Client.Misc;
+﻿using System.Collections;
+using DeepClient.Client.Misc.DeepClient.Client.Misc;
 using UnityEngine;
 
 namespace DeepClient.Client.Mono

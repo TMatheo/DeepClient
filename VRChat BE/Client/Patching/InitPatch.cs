@@ -2,7 +2,6 @@
 using System.Reflection;
 using DeepClient.Client.Patching.Modules;
 using HarmonyLib;
-using VRC.SDKBase;
 
 namespace DeepClient.Client.Patching
 {
@@ -17,53 +16,101 @@ namespace DeepClient.Client.Patching
             try
             {
                 ForceClone.Patch();
-                pass++;
             }
             catch (Exception ex)
             {
                 DeepConsole.Log(ModuleName, "allowAvatarCopying:" + ex.Message);
-                fail++;
             }
             try
             {
                 Spoofer.InitSpoofs();
-                pass++;
             }
             catch (Exception ex)
             {
                 DeepConsole.Log(ModuleName, "Spoofer:" + ex.Message);
-                fail++;
             }
             try
             {
-                LoadBalancingClienta.Patch();
-                pass++;
+                EasyPatching.DeepCoreInstance.PatchAll(typeof(HighlightColor));
             }
             catch (Exception ex)
             {
-                DeepConsole.Log(ModuleName, "LoadBalancingClient.OnEvent:" + ex.Message);
-                fail++;
+                DeepConsole.Log(ModuleName, "HighlightColor:" + ex.Message);
             }
             try
             {
                 EasyPatching.DeepCoreInstance.PatchAll(typeof(OnPlayerJoined));
-                pass++;
             }
             catch (Exception ex)
             {
-                DeepConsole.Log(ModuleName, "NetworkManager.OnPlayerJoined" + ex.Message);
-                fail++;
+                DeepConsole.Log(ModuleName, "OnPlayerJoined:" + ex.Message);
             }
             try
             {
                 EasyPatching.DeepCoreInstance.PatchAll(typeof(OnPlayerLeft));
-                pass++;
             }
             catch (Exception ex)
             {
-                DeepConsole.Log(ModuleName, "NetworkManager.OnPlayerLeft" + ex.Message);
-                fail++;
+                DeepConsole.Log(ModuleName, "OnPlayerLeft:" + ex.Message);
             }
+            try
+            {
+                LoadBalancingClienta.Patch();
+            }
+            catch (Exception ex)
+            {
+                DeepConsole.Log(ModuleName, "LoadBalancingClient.OnEvent:" + ex.Message);
+            }
+            try
+            {
+                OnAvatarChanged.Patch();
+            }
+            catch (Exception ex)
+            {
+                DeepConsole.Log(ModuleName, "OnAvatarChanged:" + ex.Message);
+            }
+            try
+            {
+                RoomManagera.Patch();
+            }
+            catch (Exception ex)
+            {
+                DeepConsole.Log(ModuleName, "RoomManager:" + ex.Message);
+            }
+            try
+            {
+                TriggerWorld.Patch();
+            }
+            catch (Exception ex)
+            {
+                DeepConsole.Log(ModuleName, "TriggerWorld:" + ex.Message);
+            }
+            try
+            {
+                UdonSync.Patch();
+            }
+            catch (Exception ex)
+            {
+                DeepConsole.Log(ModuleName, "UdonSync:" + ex.Message);
+            }
+            try
+            {
+                EasyPatching.DeepCoreInstance.Patch(typeof(QuickMenu).GetMethod("OnEnable"), GetLocalPatch("QmOpen"), null, null, null, null);
+                EasyPatching.DeepCoreInstance.Patch(typeof(QuickMenu).GetMethod("OnDisable"), GetLocalPatch("QmClose"), null, null, null, null);
+            }
+            catch (Exception ex)
+            {
+                DeepConsole.Log(ModuleName, "QuickMenu:" + ex.Message);
+            }
+            DeepConsole.Log(ModuleName, $"Placed hook successfully.");
+        }
+        private static void QmOpen()
+        {
+            DeepConsole.Log(ModuleName,"QM Open.");
+        }
+        private static void QmClose()
+        {
+            DeepConsole.Log(ModuleName, "QM Closed.");
         }
         public static HarmonyMethod GetLocalPatch(string name)
         {

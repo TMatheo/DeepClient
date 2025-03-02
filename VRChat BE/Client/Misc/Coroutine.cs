@@ -50,11 +50,7 @@ namespace DeepClient.Client.Misc
             }
             public bool MoveNext() => enumerator.MoveNext();
             public void Reset() => enumerator.Reset();
+
         }
-    }
-    public static class Extensions
-    {
-        public static UnityEngine.Coroutine Start(this IEnumerator enumerator) => Coroutine.Start(enumerator);
-        public static void Stop(this UnityEngine.Coroutine coroutine) => Coroutine.Stop(coroutine);
     }
 }

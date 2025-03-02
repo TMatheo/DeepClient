@@ -7,28 +7,28 @@ namespace DeepClient.Client
     {
         public static void Log(string c, string Text)
         {
-            EntryPoint.Log.LogMessage($"[{c}]"+Text);
+            EntryPoint.Log.LogMessage($"[{c}] "+Text);
         }
         public static void Warn(string c, string Text)
         {
-            EntryPoint.Log.LogWarning($"[{c}]" + Text);
+            EntryPoint.Log.LogWarning($"[{c}] "+Text);
         }
 
         public static void Error(string c, string Text)
         {
-            EntryPoint.Log.LogError($"[{c}]" + Text);
+            EntryPoint.Log.LogError($"[{c}] "+Text);
         }
         public static void Fatal(string c, string Text)
         {
-            EntryPoint.Log.LogFatal($"[{c}]" + Text);
+            EntryPoint.Log.LogFatal($"[{c}] "+Text);
         }
         public static void LogInfo(string c, string Text)
         {
-            EntryPoint.Log.LogInfo($"[{c}]" + Text);
+            EntryPoint.Log.LogInfo($"[{c}] "+Text);
         }
         public static void LogDebug(string c, string Text)
         {
-            EntryPoint.Log.LogDebug($"[{c}]" + Text);
+            EntryPoint.Log.LogDebug($"[{c}] "+Text);
         }
     }
 }

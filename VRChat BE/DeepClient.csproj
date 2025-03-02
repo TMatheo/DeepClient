@@ -40,17 +40,48 @@
     <Compile Include="Client\API\ButtonAPI\QM\QMDevTools.cs" />
     <Compile Include="Client\ClientMenu\VRMenu.cs" />
     <Compile Include="Client\ClientUtils.cs" />
+    <Compile Include="Client\Coroutines\CoroutineManager.cs" />
+    <Compile Include="Client\Coroutines\CustomMenuBG.cs" />
     <Compile Include="Client\GUI\GUIStyle.cs" />
     <Compile Include="Client\GUI\MainGUI.cs" />
+    <Compile Include="Client\GUI\Menus\ExploitMenu.cs" />
+    <Compile Include="Client\GUI\Menus\MovementMenu.cs" />
+    <Compile Include="Client\GUI\Menus\VisualMenu.cs" />
     <Compile Include="Client\GUI\Rendering.cs" />
+    <Compile Include="Client\Misc\Extensions.cs" />
+    <Compile Include="Client\Misc\PhotonEx.cs" />
+    <Compile Include="Client\Misc\PlayerNetEx.cs" />
+    <Compile Include="Client\Misc\SerializationUtils.cs" />
+    <Compile Include="Client\Module\Exploits\AntiTheft.cs" />
+    <Compile Include="Client\Module\Exploits\AvatarHeight.cs" />
+    <Compile Include="Client\Module\Exploits\EarRape.cs" />
+    <Compile Include="Client\Module\Exploits\ForceLewd.cs" />
+    <Compile Include="Client\Module\Exploits\InvSpammer.cs" />
+    <Compile Include="Client\Module\Exploits\ItemLagger.cs" />
+    <Compile Include="Client\Module\Exploits\LoudMic.cs" />
+    <Compile Include="Client\Module\Exploits\OwnerNameSpoofer.cs" />
+    <Compile Include="Client\Module\Exploits\PickupDropper.cs" />
+    <Compile Include="Client\Module\Exploits\PortalEploits.cs" />
+    <Compile Include="Client\Module\Exploits\UdonNuker.cs" />
+    <Compile Include="Client\Module\Movement\Flight.cs" />
+    <Compile Include="Client\Module\Movement\ForceJump.cs" />
+    <Compile Include="Client\Module\Movement\Jetpack.cs" />
+    <Compile Include="Client\Module\Movement\PosSaver.cs" />
+    <Compile Include="Client\Module\Movement\RayCastTP.cs" />
+    <Compile Include="Client\Module\Movement\SpinBot.cs" />
+    <Compile Include="Client\Module\Visuals\Flashlight.cs" />
     <Compile Include="Client\Patching\EasyPatching.cs" />
     <Compile Include="Client\Patching\InitPatch.cs" />
     <Compile Include="Client\Patching\Modules\FakeHWID.cs" />
     <Compile Include="Client\Patching\Modules\ForceClone.cs" />
+    <Compile Include="Client\Patching\Modules\HighlightColor.cs" />
     <Compile Include="Client\Patching\Modules\LoadBalancingClienta.cs" />
+    <Compile Include="Client\Patching\Modules\OnAvatarChanged.cs" />
     <Compile Include="Client\Patching\Modules\OnPlayerJoined.cs" />
     <Compile Include="Client\Patching\Modules\OnPlayerLeft.cs" />
+    <Compile Include="Client\Patching\Modules\RoomManagera.cs" />
     <Compile Include="Client\Patching\Modules\Spoofer.cs" />
+    <Compile Include="Client\Patching\Modules\TriggerWorld.cs" />
     <Compile Include="Client\Patching\Modules\UdonSync.cs" />
     <Compile Include="DeepConsole.cs" />
     <Compile Include="Client\Misc\Coroutine.cs" />
@@ -64,10 +95,7 @@
     <Compile Include="GlobalRefs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Client\Coroutines\" />
-    <Folder Include="Client\GUI\Menus\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Reference Include="0Harmony, Version=2.10.2.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
