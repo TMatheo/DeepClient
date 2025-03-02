@@ -1,0 +1,15 @@
+﻿global using VRCPlayer = MonoBehaviour1PublicOb_pOb_s_pBoGaOb_pStUnique;
+global using GamelikeInputController = MonoBehaviour2PublicSiTrUnique;
+global using VRCQMDashButtonFunc = ButtonPublicIMoveHandlerIEventSystemHandlerIPointerDownHandlerIPointerUpHandlerIPointerEnterHandlerIPointerExitHandlerISelectHandlerIDeselectHandlerSt_cBo_sObObStUnique;
+global using NetworkManager = MonoBehaviourPublicDaBoAc1ObDiOb2InHaUnique;
+global using USpeak = MonoBehaviourPublicBoSiBoLiSi1ObSiBoInUnique;
+global using QuickMenu = UIElement1PublicCaGaCaObGa_cObMoGa_VUnique;
+///
+/// The rest of globalusing is from HomoTool:https://github.com/tado1203/HomoTool/blob/master/HomoTool/GlobalUsings.cs
+///
+global using LoadBalancingClient_Internal = ObjectPublicIPhotonPeerListenerObStNuStOb1CoObBoDiUnique;
+global using PhotonNetwork_Internal = ObjectPublicAbstractSealedObInObStInCo2ObInBoUnique;
+global using RaiseEventOptions_Internal = ObjectPublicObByObInByObObUnique;
+global using PlayerNet_Internal = MonoBehaviour1PublicOb_vInByInBoObBySiObUnique;
+global using UdonSync_Internal = MonoBehaviour1PrivateBoUdOb1DiObBo2InObUnique;
+global using RoomManager_Internal = MonoBehaviourPublicBoApSiApBoObStApBo1Unique;
