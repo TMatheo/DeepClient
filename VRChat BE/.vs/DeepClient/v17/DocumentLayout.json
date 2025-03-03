@@ -3,28 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\VRChat BE\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|c:\\users\\biscuit\\documents\\github\\deepclient\\vrchat be\\client\\api\\buttonapi\\qm\\qmdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|solutionrelative:client\\api\\buttonapi\\qm\\qmdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|c:\\users\\biscuit\\documents\\github\\deepclient\\vrchat be\\client\\misc\\vrcextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|solutionrelative:client\\misc\\vrcextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\VRChat BE\\entrypoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|solutionrelative:entrypoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|c:\\users\\biscuit\\documents\\github\\deepclient\\vrchat be\\client\\clientmenu\\vrmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|solutionrelative:client\\clientmenu\\vrmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|c:\\users\\biscuit\\documents\\github\\deepclient\\vrchat be\\client\\clientmenu\\menumusic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|solutionrelative:client\\clientmenu\\menumusic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|c:\\users\\biscuit\\documents\\github\\deepclient\\vrchat be\\client\\clientmenu\\qmconsole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|solutionrelative:client\\clientmenu\\qmconsole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,84 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VrcExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\VRChat BE\\Client\\Misc\\VrcExtensions.cs",
-              "RelativeDocumentMoniker": "Client\\Misc\\VrcExtensions.cs",
-              "ToolTip": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\VRChat BE\\Client\\Misc\\VrcExtensions.cs",
-              "RelativeToolTip": "Client\\Misc\\VrcExtensions.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAjwDcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T02:40:14.572Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "QMDashboard.cs",
-              "DocumentMoniker": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\VRChat BE\\Client\\API\\ButtonAPI\\QM\\QMDashboard.cs",
-              "RelativeDocumentMoniker": "Client\\API\\ButtonAPI\\QM\\QMDashboard.cs",
-              "ToolTip": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\VRChat BE\\Client\\API\\ButtonAPI\\QM\\QMDashboard.cs",
-              "RelativeToolTip": "Client\\API\\ButtonAPI\\QM\\QMDashboard.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T02:15:56.032Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MenuMusic.cs",
-              "DocumentMoniker": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\VRChat BE\\Client\\ClientMenu\\MenuMusic.cs",
-              "RelativeDocumentMoniker": "Client\\ClientMenu\\MenuMusic.cs",
-              "ToolTip": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\VRChat BE\\Client\\ClientMenu\\MenuMusic.cs",
-              "RelativeToolTip": "Client\\ClientMenu\\MenuMusic.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T02:11:21.182Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "VRMenu.cs",
               "DocumentMoniker": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\VRChat BE\\Client\\ClientMenu\\VRMenu.cs",
               "RelativeDocumentMoniker": "Client\\ClientMenu\\VRMenu.cs",
               "ToolTip": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\VRChat BE\\Client\\ClientMenu\\VRMenu.cs",
               "RelativeToolTip": "Client\\ClientMenu\\VRMenu.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBcAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowBsAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T02:06:20.617Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "QMConsole.cs",
-              "DocumentMoniker": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\VRChat BE\\Client\\ClientMenu\\QMConsole.cs",
-              "RelativeDocumentMoniker": "Client\\ClientMenu\\QMConsole.cs",
-              "ToolTip": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\VRChat BE\\Client\\ClientMenu\\QMConsole.cs",
-              "RelativeToolTip": "Client\\ClientMenu\\QMConsole.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAwB8AAADYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T02:05:05.478Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EntryPoint.cs",
-              "DocumentMoniker": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\VRChat BE\\EntryPoint.cs",
-              "RelativeDocumentMoniker": "EntryPoint.cs",
-              "ToolTip": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\VRChat BE\\EntryPoint.cs",
-              "RelativeToolTip": "EntryPoint.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T20:49:02.76Z",
+              "WhenOpened": "2025-03-03T05:01:58.668Z",
               "EditorCaption": ""
             }
           ]

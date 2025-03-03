@@ -25,8 +25,9 @@ namespace DeepClient.Client.ClientMenu
             GameObject.Find("Canvas_QuickMenu(Clone)/CanvasGroup/Container/Window/QMParent/Menu_Dashboard/ScrollRect").GetComponent<ScrollRectPublicIBeginDragHandlerIEventSystemHandlerIEndDragHandlerIDragHandlerIScrollHandlerSiSt_cBomiSi_aBoUI_fUnique>().enabled = true;
             QMDashboard.AddHeader("DeepClient", "DeepClient");
             QMDashboard.CreateButtonPref("DeepClient");
-            QMDashboard.AddButton("DeepClient", "Test1", "Test1", true, delegate ()
+            QMDashboard.AddButton("DeepClient", "Flight", "Flight", true, delegate ()
             {
+                Module.Movement.Flight.FlyToggle();
             }); 
         }
     }

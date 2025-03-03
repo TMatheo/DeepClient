@@ -1,6 +1,7 @@
 ﻿using System;
 using TMPro;
 using UnityEngine;
+using VRC.Localization;
 
 namespace DeepClient.Client.API.ButtonAPI.QM
 {
