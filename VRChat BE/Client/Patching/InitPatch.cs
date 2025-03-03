@@ -107,10 +107,13 @@ namespace DeepClient.Client.Patching
         private static void QmOpen()
         {
             DeepConsole.Log(ModuleName,"QM Open.");
+            Coroutines.CustomMenuBG.ApplyColors();
+            ClientMenu.MenuMusic.State(true);
         }
         private static void QmClose()
         {
             DeepConsole.Log(ModuleName, "QM Closed.");
+            ClientMenu.MenuMusic.State(false);
         }
         public static HarmonyMethod GetLocalPatch(string name)
         {

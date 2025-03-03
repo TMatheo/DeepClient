@@ -13,6 +13,7 @@ namespace DeepClient
         {
             Log = base.Log;
             Client.Patching.InitPatch.Start();
+            Client.Coroutines.CoroutineManager.Init();
             AddComponent<MainMonoBehaviour>();
             AddComponent<Client.ClientMenu.VRMenu>();
         }

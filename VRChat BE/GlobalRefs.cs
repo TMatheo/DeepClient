@@ -6,6 +6,9 @@ global using USpeaker = MonoBehaviourPublicBoSiBoLiSi1ObSiBoInUnique;
 global using QuickMenu = UIElement1PublicCaGaCaObGa_cObMoGa_VUnique;
 global using HighlightsFXStandalone = MonoBehaviour2PublicSealedReInCoInhireInblreSiUnique;
 global using PortalInternal = MonoBehaviourPublicStSiBoInSeSoSiInStObUnique;
+global using ImageEx = ImagePublicVoOnVeVoRaBoCaVeUnique;
+global using VRCBtnToolTip = MonoBehaviourPublicIPointerEnterHandlerIEventSystemHandlerIPointerExitHandler1Lo_lLo_aBoLoBo1BoUnique;
+
 ///
 /// The rest of globalusing is from HomoTool:https://github.com/tado1203/HomoTool/blob/master/HomoTool/GlobalUsings.cs
 ///

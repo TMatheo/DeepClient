@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DeepClient.Client.Misc.DeepClient.Client.Misc;
 
 namespace DeepClient.Client.Coroutines
 {
@@ -10,7 +6,10 @@ namespace DeepClient.Client.Coroutines
     {
         public static void Init()
         {
-
+            CustomMenuBG.Init().Start();
+            CustomLoadingAudios.Init().Start();
+            CustomLoadingScreen.Init().Start();
+            CustomVRLoadingOverlay.Init().Start();
         }
     }
 }

@@ -38,10 +38,15 @@
   <ItemGroup>
     <Compile Include="Client\API\ButtonAPI\QM\QMDashboard.cs" />
     <Compile Include="Client\API\ButtonAPI\QM\QMDevTools.cs" />
+    <Compile Include="Client\ClientMenu\MenuMusic.cs" />
+    <Compile Include="Client\ClientMenu\QMConsole.cs" />
     <Compile Include="Client\ClientMenu\VRMenu.cs" />
     <Compile Include="Client\ClientUtils.cs" />
     <Compile Include="Client\Coroutines\CoroutineManager.cs" />
+    <Compile Include="Client\Coroutines\CustomLoadingAudios.cs" />
+    <Compile Include="Client\Coroutines\CustomLoadingScreen.cs" />
     <Compile Include="Client\Coroutines\CustomMenuBG.cs" />
+    <Compile Include="Client\Coroutines\CustomVRLoadingOverlay.cs" />
     <Compile Include="Client\GUI\GUIStyle.cs" />
     <Compile Include="Client\GUI\MainGUI.cs" />
     <Compile Include="Client\GUI\Menus\ExploitMenu.cs" />
@@ -49,8 +54,10 @@
     <Compile Include="Client\GUI\Menus\VisualMenu.cs" />
     <Compile Include="Client\GUI\Rendering.cs" />
     <Compile Include="Client\Misc\Extensions.cs" />
+    <Compile Include="Client\Misc\LoadSprites.cs" />
     <Compile Include="Client\Misc\PhotonEx.cs" />
     <Compile Include="Client\Misc\PlayerNetEx.cs" />
+    <Compile Include="Client\Misc\Resources.cs" />
     <Compile Include="Client\Misc\SerializationUtils.cs" />
     <Compile Include="Client\Module\Exploits\AntiTheft.cs" />
     <Compile Include="Client\Module\Exploits\AvatarHeight.cs" />
