@@ -2,14 +2,19 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using VRC.SDKBase;
 
 namespace DeepClient.Client.Misc
 {
-    internal class VrcExtensions
+    public static class VrcExtensions
     {
         internal static void ToggleCharacterController(bool toggle)
         {
             VRCPlayer.field_Internal_Static_MonoBehaviour1PublicOb_pOb_s_pBoGaOb_pStUnique_0.gameObject.GetComponent<CharacterController>().enabled = toggle;
+        }
+        public static VRCPlayer GetPlayer(this VRCPlayerApi playerApi)
+        {
+            return playerApi.gameObject.GetComponent<VRCPlayer>();
         }
         public static void SetQmDashbordPageTittle(string name)
         {
@@ -19,14 +24,14 @@ namespace DeepClient.Client.Misc
         {
             return (GameObject.Find("Canvas_QuickMenu(Clone)/CanvasGroup/Container/Window/QMParent/Menu_SelectedUser_Local/ScrollRect/Viewport/VerticalLayoutGroup/UserProfile_Compact/PanelBG/Info/Text_Username_NonFriend"))?.GetComponent<TextMeshProUGUI>()?.text;
         }
-        public static void ListenPlayer(VRCPlayer player, bool state)
+        public static void ListenPlayer(VRCPlayerApi player)
         {
-            if (!state)
-            {
-                player.field_Private_VRCPlayerApi_0.SetVoiceDistanceFar(25f);
-                return;
-            }
-            player.field_Private_VRCPlayerApi_0.SetVoiceDistanceFar(float.PositiveInfinity);
+            player.SetVoiceDistanceFar(float.PositiveInfinity);
+        }
+        public static void TTP(VRCPlayerApi player)
+        {
+            Networking.LocalPlayer.gameObject.transform.position = player.gameObject.transform.position;
+            DeepConsole.Log("TP", $"Teleported to {player.displayName}");
         }
         public static IEnumerator SetMicColor()
         {

@@ -9,6 +9,7 @@ namespace DeepClient
     public class EntryPoint : BasePlugin
     {
         internal static new ManualLogSource Log;
+        public static bool IsBot = false;
         public override void Load()
         {
             Log = base.Log;

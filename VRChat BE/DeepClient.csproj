@@ -49,16 +49,24 @@
     <Compile Include="Client\Coroutines\CustomVRLoadingOverlay.cs" />
     <Compile Include="Client\GUI\GUIStyle.cs" />
     <Compile Include="Client\GUI\MainGUI.cs" />
+    <Compile Include="Client\GUI\Menus\AppBotMenu.cs" />
     <Compile Include="Client\GUI\Menus\ExploitMenu.cs" />
     <Compile Include="Client\GUI\Menus\MovementMenu.cs" />
+    <Compile Include="Client\GUI\Menus\PSelectorMenu.cs" />
     <Compile Include="Client\GUI\Menus\VisualMenu.cs" />
     <Compile Include="Client\GUI\Rendering.cs" />
+    <Compile Include="Client\GUI\PlayerListGUI.cs" />
     <Compile Include="Client\Misc\Extensions.cs" />
     <Compile Include="Client\Misc\LoadSprites.cs" />
     <Compile Include="Client\Misc\PhotonEx.cs" />
     <Compile Include="Client\Misc\PlayerNetEx.cs" />
     <Compile Include="Client\Misc\Resources.cs" />
     <Compile Include="Client\Misc\SerializationUtils.cs" />
+    <Compile Include="Client\Module\ApplicationBot\Bot.cs" />
+    <Compile Include="Client\Module\ApplicationBot\BotAPI.cs" />
+    <Compile Include="Client\Module\ApplicationBot\ObjectExtensions.cs" />
+    <Compile Include="Client\Module\ApplicationBot\PlayerExtensions.cs" />
+    <Compile Include="Client\Module\ApplicationBot\SocketConnection.cs" />
     <Compile Include="Client\Module\Exploits\AntiTheft.cs" />
     <Compile Include="Client\Module\Exploits\AvatarHeight.cs" />
     <Compile Include="Client\Module\Exploits\EarRape.cs" />
@@ -77,6 +85,8 @@
     <Compile Include="Client\Module\Movement\RayCastTP.cs" />
     <Compile Include="Client\Module\Movement\SpinBot.cs" />
     <Compile Include="Client\Module\Visuals\Flashlight.cs" />
+    <Compile Include="Client\Module\WorldHacks\Murder4.cs" />
+    <Compile Include="Client\Module\WorldHacks\PickupUtils.cs" />
     <Compile Include="Client\Patching\EasyPatching.cs" />
     <Compile Include="Client\Patching\InitPatch.cs" />
     <Compile Include="Client\Patching\Modules\FakeHWID.cs" />
@@ -400,6 +410,7 @@
     <Reference Include="SteamVR_Actions">
       <HintPath>Refs\interop\SteamVR_Actions.dll</HintPath>
     </Reference>
+    <Reference Include="System" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Numerics.Vectors, Version=4.1.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.Numerics.Vectors.4.6.0\lib\net462\System.Numerics.Vectors.dll</HintPath>

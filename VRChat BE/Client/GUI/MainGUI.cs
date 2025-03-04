@@ -38,12 +38,9 @@ namespace DeepClient.Client.GUI
                         ExploitMenu.Render();
                         ImGui.EndTabItem();
                     }
-                    if (ImGui.BeginTabItem("AppBot"))
+                    if (ImGui.BeginTabItem("Player Selector"))
                     {
-                        ImGui.EndTabItem();
-                    }
-                    if (ImGui.BeginTabItem("PlayerList"))
-                    {
+                        PSelectorMenu.Render();
                         ImGui.EndTabItem();
                     }
                     ImGui.EndTabBar();

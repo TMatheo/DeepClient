@@ -5,6 +5,7 @@
         public static void RenderGui()
         {
             MainGUI.RenderMenu();
+            PlayerListGUI.RenderPL();
         }
     }
 }
