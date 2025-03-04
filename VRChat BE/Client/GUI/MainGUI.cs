@@ -31,6 +31,7 @@ namespace DeepClient.Client.GUI
                     }
                     if (ImGui.BeginTabItem("World Hacks"))
                     {
+                        WorldHackMenu.Render();
                         ImGui.EndTabItem();
                     }
                     if (ImGui.BeginTabItem("Exploits"))

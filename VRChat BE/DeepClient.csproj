@@ -54,6 +54,7 @@
     <Compile Include="Client\GUI\Menus\MovementMenu.cs" />
     <Compile Include="Client\GUI\Menus\PSelectorMenu.cs" />
     <Compile Include="Client\GUI\Menus\VisualMenu.cs" />
+    <Compile Include="Client\GUI\Menus\WorldHackMenu.cs" />
     <Compile Include="Client\GUI\Rendering.cs" />
     <Compile Include="Client\GUI\PlayerListGUI.cs" />
     <Compile Include="Client\Misc\Extensions.cs" />
@@ -85,6 +86,7 @@
     <Compile Include="Client\Module\Movement\RayCastTP.cs" />
     <Compile Include="Client\Module\Movement\SpinBot.cs" />
     <Compile Include="Client\Module\Visuals\Flashlight.cs" />
+    <Compile Include="Client\Module\WorldHacks\AmongUs.cs" />
     <Compile Include="Client\Module\WorldHacks\Murder4.cs" />
     <Compile Include="Client\Module\WorldHacks\PickupUtils.cs" />
     <Compile Include="Client\Patching\EasyPatching.cs" />
