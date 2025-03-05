@@ -1,6 +1,7 @@
 ﻿using BepInEx;
 using BepInEx.Logging;
 using BepInEx.Unity.IL2CPP;
+using DeepClient.Client;
 using UnityEngine;
 
 namespace DeepClient
@@ -13,6 +14,7 @@ namespace DeepClient
         public override void Load()
         {
             Log = base.Log;
+            DeepConsole.Alloc();
             Client.Patching.InitPatch.Start();
             Client.Coroutines.CoroutineManager.Init();
             AddComponent<MainMonoBehaviour>();
@@ -29,6 +31,7 @@ namespace DeepClient
         {
             Client.Module.Visuals.FlipScreen.OnUpdate();
             Client.Module.Visuals.OptifineZoom.Update();
+            Client.Module.Visuals.ThirdPersonView.Update();
             Client.Module.Movement.Flight.FlyUpdate();
             Client.Module.Movement.Jetpack.Update();
             Client.Module.Movement.RayCastTP.Update();

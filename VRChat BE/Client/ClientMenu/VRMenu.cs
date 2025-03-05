@@ -3,7 +3,10 @@ using UnityEngine;
 using DeepClient.Client.Misc.DeepClient.Client.Misc;
 using DeepClient.Client.API.ButtonAPI.QM;
 using DeepClient.Client.Module.Exploits;
+using DeepClient.Client.Module.Movement;
+using DeepClient.Client.Module.Visuals;
 using DeepClient.Client.Misc;
+using VRC.SDKBase;
 
 namespace DeepClient.Client.ClientMenu
 {
@@ -12,6 +15,7 @@ namespace DeepClient.Client.ClientMenu
         void Start()
         {
             DeepConsole.Log("Startup", "Waiting for qm...");
+            Module.Visuals.ThirdPersonView.OnStart();
             QMConsole.StartConsole().Start();
             MenuMusic.MenuMusicInit().Start();
             QMMenuDashPage().Start();
@@ -28,8 +32,26 @@ namespace DeepClient.Client.ClientMenu
             QMDashboard.CreateButtonPref("DeepClient");
             QMDashboard.AddButton("DeepClient", "Flight", "Flight", true, delegate ()
             {
-                Module.Movement.Flight.FlyToggle();
-            }); 
+                Flight.FlyToggle();
+            });
+            QMDashboard.AddButton("DeepClient", "CapsuleESP", "Capsule ESP", true, delegate ()
+            {
+                ESP.isCapEnabled = !ESP.isCapEnabled;
+                ESP.CapsuleState(ESP.isCapEnabled);
+            });
+            QMDashboard.AddButton("DeepClient", "ObjectESP", "Object ESP", true, delegate ()
+            {
+                ESP.isObjEnabled = !ESP.isObjEnabled;
+                ESP.ObjectState(ESP.isObjEnabled);
+            });
+            QMDashboard.AddButton("DeepClient", "JoinByID", "Join By ID", true, delegate ()
+            {
+                Misc.PopupHelper.PopupCall("Join By ID", "Enter the ID to join", "Join", false, userInput =>
+                {
+                    DeepConsole.Log("IDJoiner", $"Joining ID: {userInput}");
+                    Networking.GoToRoom(userInput);
+                });
+            });
         }
         private IEnumerator QMMenuDevPage()
         {

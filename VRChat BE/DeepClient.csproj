@@ -61,6 +61,7 @@
     <Compile Include="Client\Misc\LoadSprites.cs" />
     <Compile Include="Client\Misc\PhotonEx.cs" />
     <Compile Include="Client\Misc\PlayerNetEx.cs" />
+    <Compile Include="Client\Misc\PopupHelper.cs" />
     <Compile Include="Client\Misc\Resources.cs" />
     <Compile Include="Client\Misc\SerializationUtils.cs" />
     <Compile Include="Client\Module\ApplicationBot\Bot.cs" />
@@ -83,9 +84,11 @@
     <Compile Include="Client\Module\Movement\ForceJump.cs" />
     <Compile Include="Client\Module\Movement\Jetpack.cs" />
     <Compile Include="Client\Module\Movement\PosSaver.cs" />
+    <Compile Include="Client\Module\Movement\QMFreeze.cs" />
     <Compile Include="Client\Module\Movement\RayCastTP.cs" />
     <Compile Include="Client\Module\Movement\SpinBot.cs" />
     <Compile Include="Client\Module\Visuals\Flashlight.cs" />
+    <Compile Include="Client\Module\Visuals\ThirdPersonView.cs" />
     <Compile Include="Client\Module\WorldHacks\AmongUs.cs" />
     <Compile Include="Client\Module\WorldHacks\Murder4.cs" />
     <Compile Include="Client\Module\WorldHacks\PickupUtils.cs" />
@@ -120,11 +123,35 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Refs\BepInEx\0Harmony.dll</HintPath>
     </Reference>
+    <Reference Include="AsmResolver, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Refs\BepInEx\AsmResolver.dll</HintPath>
+    </Reference>
+    <Reference Include="AsmResolver.DotNet, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Refs\BepInEx\AsmResolver.DotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="AsmResolver.PE, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Refs\BepInEx\AsmResolver.PE.dll</HintPath>
+    </Reference>
+    <Reference Include="AsmResolver.PE.File, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Refs\BepInEx\AsmResolver.PE.File.dll</HintPath>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>Refs\interop\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass">
       <HintPath>Refs\interop\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="AssetRipper.CIL, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Refs\BepInEx\AssetRipper.CIL.dll</HintPath>
+    </Reference>
+    <Reference Include="AssetRipper.Primitives, Version=3.1.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Refs\BepInEx\AssetRipper.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="AVProVideo.Extensions.Timeline">
       <HintPath>Refs\interop\AVProVideo.Extensions.Timeline.dll</HintPath>
@@ -145,6 +172,14 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Refs\BepInEx\BepInEx.Core.dll</HintPath>
     </Reference>
+    <Reference Include="BepInEx.Preloader.Core, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Refs\BepInEx\BepInEx.Preloader.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.Unity.Common, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Refs\BepInEx\BepInEx.Unity.Common.dll</HintPath>
+    </Reference>
     <Reference Include="BepInEx.Unity.IL2CPP, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Refs\BepInEx\BepInEx.Unity.IL2CPP.dll</HintPath>
@@ -157,6 +192,10 @@
     </Reference>
     <Reference Include="Collections.Pooled">
       <HintPath>Refs\interop\Collections.Pooled.dll</HintPath>
+    </Reference>
+    <Reference Include="Cpp2IL.Core, Version=2022.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Refs\BepInEx\Cpp2IL.Core.dll</HintPath>
     </Reference>
     <Reference Include="CppInterop">
       <HintPath>Refs\Imgui\CppInterop.dll</HintPath>
@@ -181,6 +220,10 @@
     </Reference>
     <Reference Include="DeviceConfig">
       <HintPath>Refs\interop\DeviceConfig.dll</HintPath>
+    </Reference>
+    <Reference Include="Disarm, Version=2022.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Refs\BepInEx\Disarm.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
       <HintPath>Refs\interop\DOTween.dll</HintPath>

@@ -81,8 +81,6 @@ C:\Users\Biscuit\Documents\GitHub\DeepClient\VRChat BE\bin\Debug\System.Net.Netw
 C:\Users\Biscuit\Documents\GitHub\DeepClient\VRChat BE\bin\Debug\System.Diagnostics.DiagnosticSource.dll
 C:\Users\Biscuit\Documents\GitHub\DeepClient\VRChat BE\bin\Debug\System.Security.Cryptography.Cng.dll
 C:\Users\Biscuit\Documents\GitHub\DeepClient\VRChat BE\bin\Debug\System.Security.Cryptography.Csp.dll
-C:\Users\Biscuit\Documents\GitHub\DeepClient\VRChat BE\bin\Debug\BepInEx.Preloader.Core.xml
-C:\Users\Biscuit\Documents\GitHub\DeepClient\VRChat BE\bin\Debug\BepInEx.Unity.Common.xml
 C:\Users\Biscuit\Documents\GitHub\DeepClient\VRChat BE\obj\Debug\DeepClient.csproj.AssemblyReference.cache
 C:\Users\Biscuit\Documents\GitHub\DeepClient\VRChat BE\obj\Debug\DeepClient.csproj.CoreCompileInputs.cache
 C:\Users\Biscuit\Documents\GitHub\DeepClient\VRChat BE\obj\Debug\DeepClient.csproj.Up2Date

@@ -1,6 +1,4 @@
 ﻿using System.Collections;
-using BepInEx.Unity.IL2CPP.Utils;
-using UnityEngine;
 
 namespace DeepClient.Client.Misc
 {

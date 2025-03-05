@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\VRChat BE\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|c:\\users\\biscuit\\documents\\github\\deepclient\\vrchat be\\client\\clientmenu\\vrmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|solutionrelative:client\\clientmenu\\vrmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|c:\\users\\biscuit\\documents\\github\\deepclient\\vrchat be\\entrypoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|solutionrelative:entrypoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|c:\\users\\biscuit\\documents\\github\\deepclient\\vrchat be\\client\\module\\exploits\\itemlagger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|solutionrelative:client\\module\\exploits\\itemlagger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|c:\\users\\biscuit\\documents\\github\\deepclient\\vrchat be\\client\\api\\buttonapi\\qm\\qmdevtools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|solutionrelative:client\\api\\buttonapi\\qm\\qmdevtools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|c:\\users\\biscuit\\documents\\github\\deepclient\\vrchat be\\client\\gui\\menus\\worldhackmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|solutionrelative:client\\gui\\menus\\worldhackmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|c:\\users\\biscuit\\documents\\github\\deepclient\\vrchat be\\client\\patching\\modules\\udonsync.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21B5DBE7-2903-47F2-B7E8-171BED7EA758}|DeepClient.csproj|solutionrelative:client\\patching\\modules\\udonsync.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ItemLagger.cs",
-              "DocumentMoniker": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\VRChat BE\\Client\\Module\\Exploits\\ItemLagger.cs",
-              "RelativeDocumentMoniker": "Client\\Module\\Exploits\\ItemLagger.cs",
-              "ToolTip": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\VRChat BE\\Client\\Module\\Exploits\\ItemLagger.cs",
-              "RelativeToolTip": "Client\\Module\\Exploits\\ItemLagger.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAuwAsAAAAtAAAAAAAAAA==",
+              "Title": "UdonSync.cs",
+              "DocumentMoniker": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\VRChat BE\\Client\\Patching\\Modules\\UdonSync.cs",
+              "RelativeDocumentMoniker": "Client\\Patching\\Modules\\UdonSync.cs",
+              "ToolTip": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\VRChat BE\\Client\\Patching\\Modules\\UdonSync.cs",
+              "RelativeToolTip": "Client\\Patching\\Modules\\UdonSync.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T17:31:00.355Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "QMDevTools.cs",
-              "DocumentMoniker": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\VRChat BE\\Client\\API\\ButtonAPI\\QM\\QMDevTools.cs",
-              "RelativeDocumentMoniker": "Client\\API\\ButtonAPI\\QM\\QMDevTools.cs",
-              "ToolTip": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\VRChat BE\\Client\\API\\ButtonAPI\\QM\\QMDevTools.cs",
-              "RelativeToolTip": "Client\\API\\ButtonAPI\\QM\\QMDevTools.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAIwBMAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T15:00:18.993Z",
+              "WhenOpened": "2025-03-05T02:00:18.203Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "VRMenu.cs",
-              "DocumentMoniker": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\VRChat BE\\Client\\ClientMenu\\VRMenu.cs",
-              "RelativeDocumentMoniker": "Client\\ClientMenu\\VRMenu.cs",
-              "ToolTip": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\VRChat BE\\Client\\ClientMenu\\VRMenu.cs",
-              "RelativeToolTip": "Client\\ClientMenu\\VRMenu.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAqwFAAAAAvAAAAAAAAAA==",
+              "Title": "EntryPoint.cs",
+              "DocumentMoniker": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\VRChat BE\\EntryPoint.cs",
+              "RelativeDocumentMoniker": "EntryPoint.cs",
+              "ToolTip": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\VRChat BE\\EntryPoint.cs",
+              "RelativeToolTip": "EntryPoint.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T14:58:14.052Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "WorldHackMenu.cs",
-              "DocumentMoniker": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\VRChat BE\\Client\\GUI\\Menus\\WorldHackMenu.cs",
-              "RelativeDocumentMoniker": "Client\\GUI\\Menus\\WorldHackMenu.cs",
-              "ToolTip": "C:\\Users\\Biscuit\\Documents\\GitHub\\DeepClient\\VRChat BE\\Client\\GUI\\Menus\\WorldHackMenu.cs",
-              "RelativeToolTip": "Client\\GUI\\Menus\\WorldHackMenu.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAcwB8AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T09:20:16.517Z",
+              "WhenOpened": "2025-03-04T19:58:43.421Z",
               "EditorCaption": ""
             }
           ]

@@ -37,6 +37,8 @@ namespace DeepClient.Client.GUI.Menus
             {
                 Module.Visuals.Flashlight.State(Module.Visuals.Flashlight.IsEnabled);
             }
+            ImGui.Spacing();
+            ImGui.Checkbox("ThirdPersonView", ref Module.Visuals.ThirdPersonView.IsEnabled2);
         }
     }
 }

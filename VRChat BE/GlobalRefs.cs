@@ -8,7 +8,9 @@ global using HighlightsFXStandalone = MonoBehaviour2PublicSealedReInCoInhireInbl
 global using PortalInternal = MonoBehaviourPublicStSiBoInSeSoSiInStObUnique;
 global using ImageEx = ImagePublicVoOnVeVoRaBoCaVeUnique;
 global using VRCBtnToolTip = MonoBehaviourPublicIPointerEnterHandlerIEventSystemHandlerIPointerExitHandler1Lo_lLo_aBoLoBo1BoUnique;
-
+global using NameplateManager = MonoBehaviourPublicOb1BoHaBoLi1ObCoTeUnique;
+global using VRCUiPopupManager = MonoBehaviourPublicObBoObObObObObObObObUnique;
+global using TextMeshProUGUIEx = TextMeshProUGUIPublicLo_l1LaLo_cStLoUnique;
 ///
 /// The rest of globalusing is from HomoTool:https://github.com/tado1203/HomoTool/blob/master/HomoTool/GlobalUsings.cs
 ///

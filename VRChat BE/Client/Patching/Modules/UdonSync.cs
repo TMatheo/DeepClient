@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Valve.VR.InteractionSystem;
-using VRC.Core;
-
-namespace DeepClient.Client.Patching.Modules
+﻿namespace DeepClient.Client.Patching.Modules
 {
     internal class UdonSync
     {
