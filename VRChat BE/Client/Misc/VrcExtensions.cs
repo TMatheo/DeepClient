@@ -24,6 +24,18 @@ namespace DeepClient.Client.Misc
         {
             return (GameObject.Find("Canvas_QuickMenu(Clone)/CanvasGroup/Container/Window/QMParent/Menu_SelectedUser_Local/ScrollRect/Viewport/VerticalLayoutGroup/UserProfile_Compact/PanelBG/Info/Text_Username_NonFriend"))?.GetComponent<TextMeshProUGUI>()?.text;
         }
+        public static VRCPlayerApi GetPlayerByUsername(string username)
+        {
+            VRCPlayerApi[] allPlayers = new VRCPlayerApi[VRCPlayerApi.GetPlayerCount()];
+            foreach (VRCPlayerApi player in allPlayers)
+            {
+                if (player != null && player.displayName == username)
+                {
+                    return player;
+                }
+            }
+            return null;
+        }
         public static void ListenPlayer(VRCPlayerApi player)
         {
             player.SetVoiceDistanceFar(float.PositiveInfinity);

@@ -5,13 +5,14 @@
         public static bool log = false;
         public static bool block = false;
 
+        [System.Obsolete]
         public static void Patch()
         {
-            EasyPatching.DeepCoreInstance.Patch(typeof(UdonSync).GetMethod("UdonSyncRunProgramAsRPC"), EasyPatching.GetLocalPatch<UdonSync>("OnUdon"), null, null, null, null);
+            EasyPatching.DeepCoreInstance.Patch(typeof(UdonSync_Internal).GetMethod("UdonSyncRunProgramAsRPC"), EasyPatching.GetLocalPatch<UdonSync>("OnUdon"), null, null, null, null);
         }
         internal static bool OnUdon(string __0, VRCPlayer __1)
         {
-            if (log)
+            if (ConfManager.udonLogger.Value)
             {
                 DeepConsole.Log("UdonSync", string.Concat(new string[]
                 {
@@ -22,7 +23,7 @@
                     "."
                 }));
             }
-            return !block;
+            return !ConfManager.antiUdon.Value;
         }
     }
 }

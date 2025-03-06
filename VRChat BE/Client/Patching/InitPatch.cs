@@ -39,22 +39,6 @@ namespace DeepClient.Client.Patching
             }
             try
             {
-                EasyPatching.DeepCoreInstance.PatchAll(typeof(OnPlayerJoined));
-            }
-            catch (Exception ex)
-            {
-                DeepConsole.Log(ModuleName, "OnPlayerJoined:" + ex.Message);
-            }
-            try
-            {
-                EasyPatching.DeepCoreInstance.PatchAll(typeof(OnPlayerLeft));
-            }
-            catch (Exception ex)
-            {
-                DeepConsole.Log(ModuleName, "OnPlayerLeft:" + ex.Message);
-            }
-            try
-            {
                 LoadBalancingClienta.Patch();
             }
             catch (Exception ex)
@@ -101,6 +85,14 @@ namespace DeepClient.Client.Patching
             catch (Exception ex)
             {
                 DeepConsole.Log(ModuleName, "QuickMenu:" + ex.Message);
+            }
+            try
+            {
+                NetworkManagerPatch.Patch();
+            }
+            catch (Exception ex)
+            {
+                DeepConsole.Log(ModuleName, "NetworkManager:" + ex.Message);
             }
             DeepConsole.Log(ModuleName, $"Placed hook successfully.");
         }

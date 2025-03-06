@@ -27,12 +27,13 @@ namespace DeepClient.Client
                     Console.SetError(writer);
                     Console.CursorVisible = false;
                     Console.Title = "DeepConsole";
+                    Art(false);
                     Log("Console", "Allocated console :3");
                 }
                 else
                 {
                     BeShitConsole = true;
-                    Log("Console", "Oh Hell nah you are using be one.");
+                    Log("Console", "Oh hell nah you are using be one.");
                 }
             }
         }

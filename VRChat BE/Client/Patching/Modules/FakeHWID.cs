@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using UnityEngine;
@@ -31,10 +29,9 @@ namespace DeepClient.Client.Patching.Modules
                         byte b = x;
                         return b.ToString("x2");
                     }).Aggregate((string x, string y) => x + y);
-
-                DeepConsole.Log($"Patch", "[Spoofer]: Success Patched HWID {newHWID}");
             }
             __result = newHWID;
+            DeepConsole.Log($"Spoofer", $"Success Patched HWID {newHWID}");
             return false;
         }
     }

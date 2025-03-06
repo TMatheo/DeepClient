@@ -3,6 +3,7 @@ using UnityEngine;
 using VRC.Localization;
 using Il2CppSystem.Collections.Generic;
 using TMPro;
+using System.Security.Policy;
 
 namespace DeepClient.Client.Misc
 {
@@ -11,6 +12,11 @@ namespace DeepClient.Client.Misc
         public static void AlertPopup(string tittle, string content, int time)
         {
             VRCUiPopupManager.prop_MonoBehaviourPublicObBoObObObObObObObObUnique_0.Method_Public_Void_LocalizableString_LocalizableString_Single_0(LocalizableStringExtensions.Localize(tittle, null, null, null), LocalizableStringExtensions.Localize(content, null, null, null), time);
+        }
+        public static void HudNotif(string Text)
+        {
+            LocalizableString localizableString = LocalizableStringExtensions.Localize(Text, null, null, null);
+            HudController.field_Public_Static_MonoBehaviourPublicObnoObmousCaObhuGa_gUnique_0.Method_Public_Void_LocalizableString_Sprite_PDM_0(localizableString,Misc.Resources.LoadSprite("ClientIcon.png"));
         }
         public static void PopupCall(string T, string S, string BT, bool IsNumpad, Action<string> onUserInputAction = null)
         {
@@ -37,5 +43,10 @@ namespace DeepClient.Client.Misc
             Tittle, ntg, TMP_InputField.InputType.Standard, IsNumpad, BText, logInputAction, onCloseAction, Sub, true, null, false, 0
             );
         }
+        public static void OpenVideoInMM(string Tittle, string url, bool s)
+        {
+            UIManager.prop_UIManagerPublicBoObAc1AcGaBo1DiAcUnique_0.Method_Public_Virtual_Final_New_Void_String_String_Boolean_0(Tittle, url, s);
+        }
+
     }
 }

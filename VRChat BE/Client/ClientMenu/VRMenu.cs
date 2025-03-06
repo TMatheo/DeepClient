@@ -15,9 +15,11 @@ namespace DeepClient.Client.ClientMenu
         void Start()
         {
             DeepConsole.Log("Startup", "Waiting for qm...");
-            Module.Visuals.ThirdPersonView.OnStart();
             QMConsole.StartConsole().Start();
-            MenuMusic.MenuMusicInit().Start();
+            if (ConfManager.ShouldMenuMusic.Value)
+            {
+                MenuMusic.MenuMusicInit().Start();
+            }
             QMMenuDashPage().Start();
             QMMenuDevPage().Start();
         }
@@ -27,6 +29,7 @@ namespace DeepClient.Client.ClientMenu
             {
                 yield return null;
             }
+            Module.Visuals.ThirdPersonView.OnStart();
             QMDashboard.Setup();
             QMDashboard.AddHeader("DeepClient", "DeepClient");
             QMDashboard.CreateButtonPref("DeepClient");

@@ -13,7 +13,7 @@ namespace DeepClient.Client.Patching.Modules
         {
             try
             {
-                if (BlockWTriggers)
+                if (ConfManager.blockWorldTriggers.Value)
                 {
                     __1 = (VRC_EventHandler.VrcBroadcastType)4;
                 }

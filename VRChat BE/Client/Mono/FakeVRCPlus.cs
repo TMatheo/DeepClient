@@ -8,13 +8,13 @@ namespace DeepClient.Client.Mono
     {
         public void VRCPBEventButton()
         {
-            GameObject.Find("Canvas_MainMenu(Clone)/Container/MMParent/Menu_VRChat+/Menu_MM_DynamicSidePanel/Panel_SectionList/ScrollRect_Navigation_Container/ScrollRect_Content/Viewport/VerticalLayoutGroup/Page_MM_VRChatPlus_Account").SetActive(false);
-            GameObject.Find("Canvas_MainMenu(Clone)/Container/MMParent/Menu_VRChat+/Menu_MM_DynamicSidePanel/Panel_SectionList/ScrollRect_Navigation_Container/ScrollRect_Content/Viewport/VerticalLayoutGroup/Page_MM_Backgrounds").SetActive(true);
-            GameObject.Find("Canvas_MainMenu(Clone)/Container/MMParent/Menu_VRChat+/Menu_MM_DynamicSidePanel/Panel_SectionList/ScrollRect_Navigation_Container/ScrollRect_Content/Viewport/VerticalLayoutGroup/Page_MM_UIColorPalettes").SetActive(true);
+            GameObject.Find("Canvas_MainMenu(Clone)/Container/MMParent/HeaderOffset/Menu_VRChat+/Menu_MM_DynamicSidePanel/Panel_SectionList/ScrollRect_Navigation_Container/ScrollRect_Content/Viewport/VerticalLayoutGroup/Page_MM_VRChatPlus_Account").SetActive(false);
+            GameObject.Find("Canvas_MainMenu(Clone)/Container/MMParent/HeaderOffset/Menu_VRChat+/Menu_MM_DynamicSidePanel/Panel_SectionList/ScrollRect_Navigation_Container/ScrollRect_Content/Viewport/VerticalLayoutGroup/Page_MM_Backgrounds").SetActive(true);
+            GameObject.Find("Canvas_MainMenu(Clone)/Container/MMParent/HeaderOffset/Menu_VRChat+/Menu_MM_DynamicSidePanel/Panel_SectionList/ScrollRect_Navigation_Container/ScrollRect_Content/Viewport/VerticalLayoutGroup/Page_MM_UIColorPalettes").SetActive(true);
         }
-        void Start()
+        void OnEnable()
         {
-            //LogHandler.Log("Yooo i'm FakeVRCPlus");
+            DeepConsole.Log("Startup", "Yooo, i'm FakeVRCPlus.");
             Init().Start();
         }
         private IEnumerator Init()

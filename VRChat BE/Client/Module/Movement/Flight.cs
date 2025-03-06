@@ -22,7 +22,8 @@ namespace DeepClient.Client.Module.Movement
                 Physics.gravity = Vector3.zero;
                 VRCPlayer.field_Internal_Static_MonoBehaviour1PublicOb_pOb_s_pBoGaOb_pStUnique_0.field_Private_VRCPlayerApi_0.SetVelocity(Vector3.zero);
                 VrcExtensions.ToggleCharacterController(false);
-                DeepConsole.Log("Flight", "Flight Enabled.");
+                DeepConsole.LogConsole("Flight", "Flight Enabled.");
+                PopupHelper.HudNotif("Flight Enabled.");
             }
             else
             {
@@ -31,7 +32,8 @@ namespace DeepClient.Client.Module.Movement
                 Physics.gravity = _originalGravity;
                 Networking.LocalPlayer.SetVelocity(_originalVelocity);
                 VrcExtensions.ToggleCharacterController(true);
-                DeepConsole.Log("Flight", "Flight Disabled.");
+                DeepConsole.LogConsole("Flight", "Flight Disabled.");
+                PopupHelper.HudNotif("Flight Disabled.");
             }
         }
         public static void FlyUpdate()

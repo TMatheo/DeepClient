@@ -63,7 +63,7 @@ namespace DeepClient.Client.Patching.Modules
             {
                 intPtr = LoadLibrary(Paths.PluginPath + "\\steam_api64.dll");
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 DeepConsole.Log("Spoofer", "Can't Spoof Steam");
             }

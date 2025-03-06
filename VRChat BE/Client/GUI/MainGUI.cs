@@ -44,6 +44,11 @@ namespace DeepClient.Client.GUI
                         PSelectorMenu.Render();
                         ImGui.EndTabItem();
                     }
+                    if (ImGui.BeginTabItem("Settings"))
+                    {
+                        SettingsMenu.Render();
+                        ImGui.EndTabItem();
+                    }
                     ImGui.EndTabBar();
                 }
                 ImGui.End();

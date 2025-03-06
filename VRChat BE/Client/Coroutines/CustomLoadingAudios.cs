@@ -3,6 +3,9 @@ using UnityEngine;
 using System.IO;
 using System.Collections;
 using DeepClient.Client.Misc.DeepClient.Client.Misc;
+using VRC.Core;
+using System.Net;
+using System;
 
 namespace DeepClient.Client.Coroutines
 {
@@ -11,6 +14,12 @@ namespace DeepClient.Client.Coroutines
         public static AudioClip clip;
         public static IEnumerator Init()
         {
+            if (File.Exists("DeepClient/LoadingMusic/LoginScreenMusic.ogg"))
+            { }
+            else
+            {
+                DownloadFiles("https://github.com/TMatheo/FileHost/raw/refs/heads/main/DeepClient/LoginScreenMusic.ogg", "DeepClient/LoadingMusic/LoginScreenMusic.ogg");
+            }
             while (GameObject.Find("LoadingBackground_TealGradient_Music/LoadingSound") == null)
             {
                 yield return null;
@@ -68,6 +77,24 @@ namespace DeepClient.Client.Coroutines
                 musicObj.gameObject.SetActive(false);
             }
             yield break;
+        }
+        public static byte[] DownloadFiles(string downloadUrl, string savePath)
+        {
+            byte[] result = null;
+            using (WebClient webClient = new WebClient())
+            {
+                try
+                {
+                    result = webClient.DownloadData(downloadUrl);
+                    File.WriteAllBytes(savePath, result);
+                    DeepConsole.Log("AudioManager", $"Downloaded: {savePath}");
+                }
+                catch (Exception ex)
+                {
+                    DeepConsole.Log("AudioManager", $"An error occurred while downloading: {ex}");
+                }
+            }
+            return result;
         }
     }
 }

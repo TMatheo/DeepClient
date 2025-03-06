@@ -11,6 +11,8 @@ global using VRCBtnToolTip = MonoBehaviourPublicIPointerEnterHandlerIEventSystem
 global using NameplateManager = MonoBehaviourPublicOb1BoHaBoLi1ObCoTeUnique;
 global using VRCUiPopupManager = MonoBehaviourPublicObBoObObObObObObObObUnique;
 global using TextMeshProUGUIEx = TextMeshProUGUIPublicLo_l1LaLo_cStLoUnique;
+global using HudController = MonoBehaviourPublicObnoObmousCaObhuGa_gUnique;
+global using UIManager = UIManagerPublicBoObAc1AcGaBo1DiAcUnique;
 ///
 /// The rest of globalusing is from HomoTool:https://github.com/tado1203/HomoTool/blob/master/HomoTool/GlobalUsings.cs
 ///

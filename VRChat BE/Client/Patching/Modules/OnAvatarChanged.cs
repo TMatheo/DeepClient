@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Linq;
 using System.Reflection;
+using DeepClient.Client.Misc;
 using UnityEngine;
+using Valve.VR.InteractionSystem;
 using VRC.SDKBase;
 
 namespace DeepClient.Client.Patching.Modules
@@ -17,11 +19,36 @@ namespace DeepClient.Client.Patching.Modules
                  EasyPatching.DeepCoreInstance.Patch(typeof(VRCPlayer).GetMethod(m.Name), EasyPatching.GetLocalPatch<OnAvatarChanged>("OnAvaLoaded"), null, null, null, null);
              });
         }
-        internal static void OnAvaLoaded(GameObject __0, VRC_AvatarDescriptor __1, VRCPlayer __instance)
+        internal static void OnAvaLoaded(GameObject __0, VRC_AvatarDescriptor __1, PlayerNet_Internal __instance)
         {
             try
             {
-                DeepConsole.Log("AvaLogger",$"New Avi < INSERTY HERE > {__instance._player.field_Private_APIUser_0.displayName}");
+                if (ConfManager.avatarLogging.Value)
+                {
+                    var player = __instance.prop_MonoBehaviourPublicAPOb_vOb_l_pBoOb1BoUnique_0;
+                    string text = string.Concat(new string[]
+                    {
+                        "\nUser: (",
+                        player.field_Private_VRCPlayerApi_0.displayName,
+                        ")\nswitched to avatar: ",
+                        player.prop_ApiAvatar_0.name,
+                        "(",
+                        player.prop_ApiAvatar_0.id,
+                        ")\nAuthor: (",
+                        player.prop_ApiAvatar_0.authorName,
+                        ") \nCreated: (",
+                        player.prop_ApiAvatar_0.created_at.ToString(),
+                        ") \nLast Updated: (",
+                        player.prop_ApiAvatar_0.updated_at.ToString(),
+                        ")"
+                    });
+                    if (!(last_log == text))
+                    {
+                        last_log = text;
+                        AvatarLoggerHandler.Log(player.prop_ApiAvatar_0);
+                        DeepConsole.LogConsole("AvaLogger", text);
+                    }
+                }
             }
             catch (Exception ex)
             {

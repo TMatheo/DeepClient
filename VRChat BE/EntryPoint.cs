@@ -15,10 +15,17 @@ namespace DeepClient
         {
             Log = base.Log;
             DeepConsole.Alloc();
+            ConfManager.Initialize();
+            Client.Misc.SpriteManager.LoadSprite();
             Client.Patching.InitPatch.Start();
             Client.Coroutines.CoroutineManager.Init();
             AddComponent<MainMonoBehaviour>();
             AddComponent<Client.ClientMenu.VRMenu>();
+            AddComponent<Client.Mono.FakeVRCPlus>();
+        }
+        public static void Injectories()
+        {
+
         }
     }
     public class MainMonoBehaviour : MonoBehaviour
@@ -29,14 +36,14 @@ namespace DeepClient
         }
         void Update()
         {
-            Client.Module.Visuals.FlipScreen.OnUpdate();
+            Client.Module.QOL.KeyBindManager.OnUpdate();
+            Client.Module.Exploits.ItemLagger.OnUpdate();
+            Client.Module.Movement.Jetpack.Update();
+            Client.Module.Movement.SpinBot.Update();
+            Client.Module.Movement.Flight.FlyUpdate();
+            Client.Module.Movement.RayCastTP.Update();
             Client.Module.Visuals.OptifineZoom.Update();
             Client.Module.Visuals.ThirdPersonView.Update();
-            Client.Module.Movement.Flight.FlyUpdate();
-            Client.Module.Movement.Jetpack.Update();
-            Client.Module.Movement.RayCastTP.Update();
-            Client.Module.Movement.SpinBot.Update();
-            Client.Module.Exploits.ItemLagger.OnUpdate();
         }
     }
 }

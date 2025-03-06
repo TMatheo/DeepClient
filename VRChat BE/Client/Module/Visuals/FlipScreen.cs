@@ -7,7 +7,6 @@ namespace DeepClient.Client.Module.Visuals
         public static bool IsEnabled = false;
         public static void OnUpdate()
         {
-            if (IsEnabled) 
             {
                 if (!Input.GetKey(KeyCode.LeftControl)) return;
 

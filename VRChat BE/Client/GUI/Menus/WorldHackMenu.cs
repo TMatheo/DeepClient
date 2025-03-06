@@ -31,7 +31,7 @@ namespace DeepClient.Client.GUI.Menus
             }
             if (ImGui.BeginMenu("Among Us"))
             {
-
+                ImGui.EndMenu();
             }
         }
     }

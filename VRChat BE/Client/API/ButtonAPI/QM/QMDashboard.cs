@@ -10,6 +10,7 @@ namespace DeepClient.Client.API.ButtonAPI.QM
         public static void Setup()
         {
             Misc.VrcExtensions.SetQmDashbordPageTittle($"{ClientUtils.GetGreeting()}!");
+            GameObject.Find("Canvas_QuickMenu(Clone)/CanvasGroup/Container/Window/QMParent/Menu_Dashboard/ScrollRect").GetComponent<ScrollRectPublicIBeginDragHandlerIEventSystemHandlerIEndDragHandlerIDragHandlerIScrollHandlerSiSt_cBomiSi_aBoUI_fUnique>().enabled = true;
             GameObject.Find("Canvas_QuickMenu(Clone)/CanvasGroup/Container/Window/QMParent/Menu_Dashboard/ScrollRect/Viewport/VerticalLayoutGroup/Carousel_Banners").SetActive(false);
             GameObject.Find("Canvas_QuickMenu(Clone)/CanvasGroup/Container/Window/Page_Buttons_QM/HorizontalLayoutGroup/Page_VRCPlus").SetActive(false);
             GameObject.Find("Canvas_QuickMenu(Clone)/CanvasGroup/Container/Window/Page_Buttons_QM/HorizontalLayoutGroup/Page_VRCPlusExperiment").SetActive(false);
